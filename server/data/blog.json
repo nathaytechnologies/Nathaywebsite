@@ -1,0 +1,8 @@
+[
+  { "title": "Why we moved every client from cron jobs to managed queues", "tag": "Engineering", "date": "Jun 2026", "color": "#12B8A6" },
+  { "title": "A founder's guide to payroll compliance in India", "tag": "Payroll", "date": "May 2026", "color": "#2F6FED" },
+  { "title": "What we actually use AI for in client projects", "tag": "AI", "date": "May 2026", "color": "#F2A93B" },
+  { "title": "Cutting a client's AWS bill by 40% without downtime", "tag": "Cloud", "date": "Apr 2026", "color": "#12B8A6" },
+  { "title": "Design reviews that don't turn into a two-week detour", "tag": "Product", "date": "Mar 2026", "color": "#2F6FED" },
+  { "title": "The payroll mistakes that cost founders the most", "tag": "Payroll", "date": "Mar 2026", "color": "#F2A93B" }
+]

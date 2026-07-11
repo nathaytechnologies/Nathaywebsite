@@ -1,0 +1,214 @@
+/* ===== Nathay Technologies — Design Tokens ===== */
+:root {
+  --bg: #F5F8FC;
+  --bg-soft: #ECF2FA;
+  --surface: #FFFFFF;
+  --surface-glass: rgba(255, 255, 255, 0.72);
+  --ink: #0A1526;
+  --ink-muted: #5B6779;
+  --ink-faint: #8B96A8;
+  --line: #E3E9F2;
+
+  --teal: #12B8A6;
+  --teal-dark: #0B8F82;
+  --blue: #2F6FED;
+  --blue-dark: #1E4FC4;
+  --amber: #F2A93B;
+
+  --gradient-primary: linear-gradient(135deg, #12B8A6 0%, #2F6FED 100%);
+  --gradient-soft: linear-gradient(180deg, #EAF3FF 0%, #F5F8FC 100%);
+  --shadow-sm: 0 2px 10px rgba(16, 34, 64, 0.06);
+  --shadow-md: 0 12px 32px rgba(16, 34, 64, 0.10);
+  --shadow-lg: 0 24px 64px rgba(16, 34, 64, 0.14);
+
+  --radius-pill: 999px;
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  --font-display: 'Sora', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+ul { list-style: none; margin: 0; padding: 0; }
+h1, h2, h3, h4 { font-family: var(--font-display); margin: 0; line-height: 1.08; letter-spacing: -0.02em; }
+p { margin: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* ===== Layout ===== */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.section { padding: 96px 0; }
+.section-tight { padding: 64px 0; }
+@media (max-width: 768px) {
+  .section { padding: 64px 0; }
+  .section-tight { padding: 44px 0; }
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal-dark);
+  background: rgba(18,184,166,0.09);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 18px;
+}
+.eyebrow::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.section-head { max-width: 640px; margin-bottom: 52px; }
+.section-head h2 { font-size: clamp(28px, 3.4vw, 42px); font-weight: 700; color: var(--ink); }
+.section-head p { margin-top: 14px; font-size: 17px; color: var(--ink-muted); line-height: 1.65; }
+.section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 14px 26px;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: var(--font-body);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--gradient-primary);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(47, 111, 237, 0.28);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 32px rgba(47, 111, 237, 0.34); }
+.btn-ghost {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.btn-ghost:hover { border-color: var(--teal); color: var(--teal-dark); }
+.btn-dark {
+  background: var(--ink);
+  color: #fff;
+}
+.btn-dark:hover { transform: translateY(-2px); }
+.btn-sm { padding: 10px 20px; font-size: 14px; }
+.btn-block { width: 100%; }
+
+/* ===== Pills / nav chips (signature motif) ===== */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+  color: var(--ink);
+}
+
+/* ===== Cards ===== */
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-soft);
+  color: var(--ink-muted);
+}
+
+/* ===== Utility ===== */
+.grad-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-muted { color: var(--ink-muted); }
+.mt-8 { margin-top: 8px; } .mt-16 { margin-top: 16px; } .mt-24 { margin-top: 24px; } .mt-32 { margin-top: 32px; } .mt-48 { margin-top: 48px; }
+.flex { display: flex; }
+.flex-wrap { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-8 { gap: 8px; } .gap-12 { gap: 12px; } .gap-16 { gap: 16px; } .gap-24 { gap: 24px; }
+
+.hero-actions { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
+
+/* ===== CTA banner (reused across pages) ===== */
+.cta-banner {
+  background: var(--ink);
+  border-radius: 32px;
+  padding: 64px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  width: 480px; height: 480px;
+  background: var(--gradient-primary);
+  filter: blur(120px);
+  opacity: 0.35;
+  top: -200px; left: 50%; transform: translateX(-50%);
+}
+.cta-banner h2 { color: #fff; font-size: clamp(26px, 3.4vw, 40px); position: relative; }
+.cta-banner p { color: rgba(255,255,255,0.65); max-width: 520px; margin: 16px auto 0; position: relative; font-size: 16px; }
+.cta-banner .hero-actions { justify-content: center; position: relative; }
+@media (max-width: 600px) { .cta-banner { padding: 44px 26px; } }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1.5deg); }
+}

@@ -1,0 +1,10 @@
+[
+  { "name": "Arjun Nathay", "role": "Co-Founder & CEO", "color": "#12B8A6" },
+  { "name": "Priya Shah", "role": "Co-Founder & CTO", "color": "#2F6FED" },
+  { "name": "Karan Verma", "role": "Head of Engineering", "color": "#F2A93B" },
+  { "name": "Neha Kulkarni", "role": "Head of Payroll Product", "color": "#12B8A6" },
+  { "name": "Farhan Ali", "role": "Lead DevOps Engineer", "color": "#2F6FED" },
+  { "name": "Simran Kaur", "role": "Design Lead", "color": "#F2A93B" },
+  { "name": "Vikram Rao", "role": "Senior Full-Stack Engineer", "color": "#12B8A6" },
+  { "name": "Ananya Iyer", "role": "Client Success Lead", "color": "#2F6FED" }
+]

@@ -1,0 +1,8 @@
+[
+  { "title": "Kadence Retail — Checkout Rebuild", "client": "E-commerce", "tags": ["React", "Node.js", "Stripe"], "metric": "+34% conversion rate", "color": "#12B8A6" },
+  { "title": "Verto Logistics — Fleet Dashboard", "client": "Logistics", "tags": ["React", "AWS", "WebSockets"], "metric": "2hr → 4min deploys", "color": "#2F6FED" },
+  { "title": "Brightline Foods — Nathay Payroll rollout", "client": "FMCG", "tags": ["Payroll", "Compliance"], "metric": "3 days saved / cycle", "color": "#F2A93B" },
+  { "title": "Solace Health — Patient Portal", "client": "Healthcare", "tags": ["React Native", "Node.js"], "metric": "18k+ monthly active users", "color": "#12B8A6" },
+  { "title": "Orbit Finance — Cloud Migration", "client": "Fintech", "tags": ["AWS", "Kubernetes"], "metric": "99.98% uptime", "color": "#2F6FED" },
+  { "title": "Marrow Studio — AI Content Tools", "client": "Media", "tags": ["AI", "Node.js"], "metric": "5x content output", "color": "#F2A93B" }
+]
