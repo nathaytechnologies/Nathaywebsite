@@ -46,14 +46,16 @@ export default function Navbar() {
           />
 
           <div className="brand">
-            <span className="brand-title">
-              Nathay Technologies
-            </span>
+    <span className="brand-title">
+        Nathay<br />
+        Technologies
+    </span>
 
-            <small className="brand-subtitle">
-              Software • Cloud • Payroll
-            </small>
-          </div>
+    <small className="brand-subtitle">
+        Software • Cloud • Payroll
+    </small>
+</div>
+
 
         </Link>
 
